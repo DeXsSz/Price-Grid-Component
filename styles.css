@@ -1,0 +1,138 @@
+:root{
+    /* Primary */
+    --Cyan: hsl(179, 62%, 43%);
+    --CyanLight: hsl(179, 60%, 49%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    /* Neutral*/
+    --LightGray: hsl(204, 43%, 93%);
+    --LightDark: hsl(201, 24%, 89%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --border: 12px;
+}
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: var(--LightGray);
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}
+.sub-container{
+    margin: 4rem;
+    background-color: white;
+    border-radius: var(--border);
+    border-radius: var(--border);
+    box-shadow: #00000042 1px 1px 15px;
+}
+@media only screen and (min-width: 768px) {
+    .sub-container{
+        width: 500px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .sub-heading{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .card{
+        width: 250px;
+    }
+}
+.card{
+    padding: 15px;
+}
+
+.cardOne{
+    background-color: var(--Cyan);
+}
+.cardTwo{
+    background-color: var(--CyanLight);
+    border-bottom-left-radius: var(--border);
+    border-bottom-right-radius: var(--border);
+}
+@media only screen and (min-width: 768px) {
+    .cardOne{
+        border-bottom-left-radius: var(--border);
+    }
+    .cardTwo{
+        border-bottom-right-radius: var(--border);
+        border-bottom-left-radius: unset;
+
+    }
+}
+.heading{
+    padding: 24px;
+}
+.heading h2{
+    color: var(--Cyan);
+}
+.heading h3{
+    color: var(--Bright-Yellow);
+    font-size: 16px;
+}
+.heading p{
+    color: var(--Grayish-Blue);
+    font-size: 13px;
+}
+
+.card h3{
+    color: var(--LightGray);
+    font-size: 16px;
+}
+.cardOne .precio{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--LightGray);
+    margin-bottom: 4px;
+}
+.cardOne .precio span{
+    color: var(--LightDark);
+    font-weight: 400;
+    font-size: 16px;
+}
+.cardOne p{
+    color: var(--LightGray);
+    font-size: 13px;
+    margin-top: 0;
+}
+.cardOne a{
+    background-color: var(--Bright-Yellow);
+    color: var(--LightGray);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 30px;
+    display: block;
+    text-align: center;
+    border-radius: 4px;
+    /* margin-top: 45px; */
+    font-weight: 700;
+    box-shadow: #00000086 1px 1px 6px;
+}
+.cardTwo ul{
+    list-style: none;
+    padding: 0;
+    text-align: justify;
+}
+.cardTwo ul li{
+    font-size: 13px;
+    color: var(--LightGray);
+}
